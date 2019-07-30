@@ -2,7 +2,7 @@
     #home(:style="{color: textColor}")
         .main
             h1.title Hi I'm Valentin
-            h3.subtitle I'm a Full Stack Developer based in London, England.
+            h3.subtitle I'm a Full-Stack Developer based in London, England.
             .icons
                 a(href="https://www.instagram.com/gribvalentin/")
                     linkedin-logo.icons__icon(:color='textColor')
