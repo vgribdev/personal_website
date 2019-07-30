@@ -1,0 +1,26 @@
+{
+  "name": "nuovo-sito-personale",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "author": "Valentin",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "1.18.9",
+    "prettier": "1.16.4",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}
