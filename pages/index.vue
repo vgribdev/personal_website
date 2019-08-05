@@ -6,7 +6,7 @@
             .icons
                 a(href="https://www.linkedin.com/in/vgrib/")
                     linkedin-logo.icons__icon(:color='textColor')
-                a(href="https://www.instagram.com/gribvalentin/")
+                a(href="https://www.instagram.com/vgribdev/")
                     instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
             h5.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
 
