@@ -4,9 +4,9 @@
             h1.title Hi I'm Valentin
             h3.subtitle I'm a Full-Stack Developer based in London, England.
             .icons
-                a(href="https://www.instagram.com/gribvalentin/")
-                    linkedin-logo.icons__icon(:color='textColor')
                 a(href="https://www.linkedin.com/in/vgrib/")
+                    linkedin-logo.icons__icon(:color='textColor')
+                a(href="https://www.instagram.com/vgribdev/")
                     instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
                 a(href="https://github.com/vgribdev")
                     github-logo.icons__icon.icons__icon--github(:color='textColor')
