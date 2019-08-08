@@ -8,6 +8,8 @@
                     linkedin-logo.icons__icon(:color='textColor')
                 a(href="https://www.linkedin.com/in/vgrib/")
                     instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
+                a(href="https://github.com/vgribdev")
+                    github-logo.icons__icon.icons__icon--github(:color='textColor')
             h5.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
 
         #bg
@@ -17,10 +19,11 @@
 <script>
     import InstagramLogo from '../components/icons/instagram-logo'
     import LinkedinLogo from '../components/icons/linkedin-logo'
+    import GithubLogo from '../components/icons/github-logo'
 
     const DELAY = 8000
     export default {
-        components: { InstagramLogo, LinkedinLogo },
+        components: { InstagramLogo, LinkedinLogo, GithubLogo },
         methods: {
             imageStyle(image) {
                 return {
@@ -110,7 +113,7 @@
         &:hover
             opacity: 1
 
-        &--instagram
+        &--instagram, &--github
             margin-left: 12px
 // Image translation animation
 @keyframes bg
