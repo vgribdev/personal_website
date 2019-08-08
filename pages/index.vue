@@ -10,7 +10,7 @@
                     instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
                 a(href="https://github.com/vgribdev")
                     github-logo.icons__icon.icons__icon--github(:color='textColor')
-            h5.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
+            p.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
 
         #bg
             div(v-for="(image, index) in images" :style="imageStyle(image)" :class="imageClasses(index)")
@@ -99,7 +99,7 @@
     margin-top: 12px
     font-size: 15px
     padding-left: 2px
-    opacity: .7
+    opacity: .4
 
 .icons
     padding-left: 4px
