@@ -5,22 +5,24 @@
   "author": "Valentin",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
   },
   "dependencies": {
-    "nuxt": "2.0.0"
+    "@nuxt/typescript-runtime": "0.2.2",
+    "nuxt": "2.10.2",
+    "vue-property-decorator": "8.3.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "4.1.0",
-    "eslint-plugin-prettier": "3.0.1",
-    "node-sass": "^4.12.0",
-    "nodemon": "1.18.9",
-    "prettier": "1.16.4",
-    "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.1.0"
+    "@nuxt/typescript-build": "0.3.2",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "node-sass": "4.13.0",
+    "prettier": "1.18.2",
+    "pug": "2.0.4",
+    "pug-plain-loader": "1.0.0",
+    "sass-loader": "8.0.0"
   }
 }

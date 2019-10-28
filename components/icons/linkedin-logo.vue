@@ -1,6 +1,6 @@
 <template>
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" :fill="color"
-	 width="94px" height="94px" viewBox="0 0 94 94" style="enable-background:new 0 0 94 94;" xml:space="preserve">
+     width="94px" height="94px" viewBox="0 0 94 94" style="enable-background:new 0 0 94 94;" xml:space="preserve">
 <g>
 	<path d="M89,0H5C2.239,0,0,2.239,0,5v84c0,2.761,2.239,5,5,5h84c2.762,0,5-2.239,5-5V5C94,2.239,91.762,0,89,0z M26.414,84.201
 		H10.966V34.503h15.447L26.414,84.201L26.414,84.201z M18.693,27.71c-4.951,0-8.959-4.013-8.959-8.958
@@ -12,14 +12,11 @@
 </svg>
 
 </template>
-<script>
-   export default {
-  props: {
-    color: {
-      type: String,
-      default: '#000000'
-    },
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator'
 
-  }
+@Component({})
+export default class GithubLogo extends Vue {
+    @Prop({ type: String, default: '#000000' }) readonly color!: string
 }
 </script>

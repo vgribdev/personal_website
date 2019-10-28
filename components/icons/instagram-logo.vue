@@ -1,10 +1,10 @@
 <template>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-         x="0px" y="0px"
-         :fill="color"
-         width="169.063px" height="169.063px" viewBox="0 0 169.063 169.063"
-         style="enable-background:new 0 0 169.063 169.063;"
-         xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+     x="0px" y="0px"
+     :fill="color"
+     width="169.063px" height="169.063px" viewBox="0 0 169.063 169.063"
+     style="enable-background:new 0 0 169.063 169.063;"
+     xml:space="preserve">
 <g>
 	<path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
 		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
@@ -19,14 +19,12 @@
 </g>
 </svg>
 </template>
-<script>
-   export default {
-  props: {
-    color: {
-      type: String,
-      default: '#000000'
-    },
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator'
 
-  }
+@Component({
+})
+export default class GithubLogo extends Vue {
+    @Prop({ type: String, default: '#000000' }) readonly color!: string
 }
 </script>

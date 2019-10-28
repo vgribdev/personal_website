@@ -1,75 +1,86 @@
 <template lang="pug">
-    #home(:style="{color: textColor}")
-        .main
-            h1.title Hi I'm Valentin
-            h3.subtitle I'm a Full-Stack Developer based in London, England.
-            .icons
-                a(href="https://www.linkedin.com/in/vgrib/")
-                    linkedin-logo.icons__icon(:color='textColor')
-                a(href="https://www.instagram.com/vgribdev/")
-                    instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
-                a(href="https://github.com/vgribdev")
-                    github-logo.icons__icon.icons__icon--github(:color='textColor')
-            p.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
+#home(:style="{color: textColor}")
+    .main
+        h1.title Hi I'm Valentin
+        h3.subtitle I'm a Full-Stack Developer based in London, England.
+        .icons
+            a(href="https://www.linkedin.com/in/vgrib/")
+                linkedin-logo.icons__icon(:color='textColor')
+            a(href="https://www.instagram.com/vgribdev/")
+                instagram-logo.icons__icon.icons__icon--instagram(:color='textColor')
+            a(href="https://github.com/vgribdev")
+                github-logo.icons__icon.icons__icon--github(:color='textColor')
+        p.credits Credits: Unsplash{{ author ? `, Author: ${author}.` : '.' }}
 
-        #bg
-            div(v-for="(image, index) in images" :style="imageStyle(image)" :class="imageClasses(index)")
+    #bg
+        div(v-for="(image, index) in images" :style="imageStyle(image)" :class="imageClasses(index)")
 </template>
 
-<script>
-    import InstagramLogo from '../components/icons/instagram-logo'
-    import LinkedinLogo from '../components/icons/linkedin-logo'
-    import GithubLogo from '../components/icons/github-logo'
+<script lang="ts">
 
-    const DELAY = 8000
-    export default {
-        components: { InstagramLogo, LinkedinLogo, GithubLogo },
-        methods: {
-            imageStyle(image) {
-                return {
-                    backgroundImage: `url(${image.url})`,
-                    backgroundPosition: 'center'
-                }
-            },
-            imageClasses(index) {
-                return {
-                    visible: index === this.visibleImage || index === this.lastImage,
-                    top: index === this.visibleImage
-                }
-            }
-        },
-        computed: {
-            textColor() {
-                return this.images[this.visibleImage].textColor
-            },
-            author() {
-                return this.images[this.visibleImage].author
-            }
-        },
-        data() {
-            return {
-                lastImage: 0,
-                visibleImage: 0,
-                images: [
-                    { url: '/img/img1.jpg', author: 'Ales Nesetril', textColor: '#ffffff' },
-                    { url: '/img/img2.jpg', author: 'Émile Perron', textColor: '#000000' },
-                    { url: '/img/img3.jpg', textColor: '#000000' }
-                ]
-            }
-        },
-        mounted() {
-            setInterval(() => {
-                this.lastImage = this.visibleImage
-                // if it is the last image we restart from 0, else we increment it by 1
-                this.visibleImage = this.visibleImage === this.images.length - 1 ? 0 : this.visibleImage + 1
-                // Hide last image after a short delay.
-                setTimeout(() => {
-                    this.lastImage = -1
-                }, DELAY / 3)
-            }, DELAY)
+import { Vue, Component } from 'vue-property-decorator'
+import InstagramLogo from '../components/icons/instagram-logo.vue'
+import LinkedinLogo from '../components/icons/linkedin-logo.vue'
+import GithubLogo from '../components/icons/github-logo.vue'
 
+const DELAY = 8000
+
+type Image = {
+    url: string,
+    author?: string,
+    textColor: string
+}
+
+@Component({
+    components: { InstagramLogo, LinkedinLogo, GithubLogo }
+})
+export default class App extends Vue {
+    lastImage = 0
+    visibleImage = 0
+
+    images: Image[] = [
+        { url: '/img/img1.jpg', author: 'Ales Nesetril', textColor: '#ffffff' },
+        { url: '/img/img2.jpg', author: 'Émile Perron', textColor: '#000000' },
+        { url: '/img/img3.jpg', textColor: '#000000' }
+    ]
+
+    imageStyle(image: Image) {
+        return {
+            backgroundImage: `url(${image.url})`,
+            backgroundPosition: 'center'
         }
     }
+
+    imageClasses(index: number) {
+        return {
+            visible: index === this.visibleImage || index === this.lastImage,
+            top: index === this.visibleImage
+        }
+    }
+
+
+    get textColor() {
+        return this.images[this.visibleImage].textColor
+    }
+
+    get author() {
+        return this.images[this.visibleImage].author
+    }
+
+
+    mounted() {
+        setInterval(() => {
+            this.lastImage = this.visibleImage
+            // if it is the last image we restart from 0, else we increment it by 1
+            this.visibleImage = this.visibleImage === this.images.length - 1 ? 0 : this.visibleImage + 1
+            // Hide last image after a short delay.
+            setTimeout(() => {
+                this.lastImage = -1
+            }, DELAY / 3)
+        }, DELAY)
+
+    }
+}
 </script>
 
 <style lang="sass">

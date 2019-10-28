@@ -1,5 +1,8 @@
-export default {
-    mode: 'universal',
+import { Configuration } from '@nuxt/types'
+
+const config: Configuration = {
+  // Define your configuration with auto-completion & type checking
+     mode: 'universal',
     /*
     ** Headers of the page
     */
@@ -31,14 +34,7 @@ export default {
     ** Nuxt.js modules
     */
     modules: [],
-    /*
-    ** Build configuration
-    */
-    build: {
-        /*
-        ** You can extend webpack config here
-        */
-        extend(config, ctx) {
-        }
-    }
+
+    buildModules: ['@nuxt/typescript-build'],
 }
+export default config
