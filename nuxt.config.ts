@@ -8,26 +8,29 @@ const config: Configuration = {
      */
     head: {
         title: 'Valentin Grib',
+        htmlAttrs: {
+            lang: 'en'
+        },
         meta: [
             { charset: 'utf-8' },
             {
                 name: 'viewport',
-                content: 'width=device-width, initial-scale=1',
+                content: 'width=device-width, initial-scale=1'
             },
             {
                 hid: 'description',
                 name: 'description',
-                content: 'Portfolio of Valentin Grib',
-            },
+                content: 'Portfolio of Valentin Grib'
+            }
         ],
         link: [
             { rel: 'icon', type: 'image/png', href: '/favicon.png' },
             {
                 rel: 'stylesheet',
                 href:
-                    'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap',
-            },
-        ],
+                    'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'
+            }
+        ]
     },
     /*
      ** Customize the progress-bar color
@@ -46,6 +49,6 @@ const config: Configuration = {
      */
     modules: [],
 
-    buildModules: ['@nuxt/typescript-build'],
+    buildModules: ['@nuxt/typescript-build']
 }
 export default config

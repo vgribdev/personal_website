@@ -3,7 +3,7 @@
     .main-page
         .header
             .small-line
-            img(src="img/logo.svg")
+            img(src="img/logo.svg" alt='Html tag')
             .long-line
         .main-content
             h1 Hi, I'm Valentin!
@@ -11,9 +11,9 @@
         .footer
             .long-line
             .socials-container
-                a.social.linkedin(href="https://www.linkedin.com/in/vgrib/")
-                a.social.github(href="https://github.com/vgribdev")
-                a.social.instagram(href="https://www.instagram.com/vgribdev/")
+                a.social.linkedin(href="https://www.linkedin.com/in/vgrib/" aria-label="Linkedin")
+                a.social.github(href="https://github.com/vgribdev" aria-label="Github")
+                a.social.instagram(href="https://www.instagram.com/vgribdev/" aria-label="Instagram")
             .small-line
 
 </template>
