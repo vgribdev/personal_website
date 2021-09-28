@@ -32,13 +32,7 @@ $icon-size: 26px
     justify-content: $justify
     align-items: $align
     flex-direction: $direction
-
-.social:not(:first-child)
-    margin-left: 10px
-
-.social:not(:last-child)
-    margin-right: 10px
-
+    
 .social
     cursor: pointer
     height: $icon-size
@@ -121,11 +115,12 @@ $icon-size: 26px
             bottom: 64px
             display: grid
             grid-template-columns: 1fr auto auto
-            grid-gap: 12px
+            gap: 12px
 
             .socials-container
                 +flexbox(center, center, row)
                 flex-wrap: nowrap
+                gap: 12px
 
                 .linkedin
                     background-position: center 1px
