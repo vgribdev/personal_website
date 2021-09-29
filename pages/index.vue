@@ -7,7 +7,7 @@
             .long-line
         .main-content
             h1 Hi, I'm Valentin!
-            p A Full-stack developer and co-founder of #[a(href="https://docode.it") Docode OÜ] 
+            p A Full-stack developer based in Prague
         .footer
             .long-line
             .socials-container
@@ -32,7 +32,7 @@ $icon-size: 26px
     justify-content: $justify
     align-items: $align
     flex-direction: $direction
-    
+
 .social
     cursor: pointer
     height: $icon-size
@@ -81,10 +81,6 @@ $icon-size: 26px
                 margin-top: 32px
                 font-size: 22px
                 text-transform: uppercase
-                a
-                    color: #fff
-                    &:visited
-                        color: #9a9a9a
             @media (max-width: 450px)
                 text-align: left
 
@@ -106,7 +102,7 @@ $icon-size: 26px
             top: 64px
             display: grid
             grid-template-columns: auto auto 1fr
-            grid-gap: 12px
+            gap: 12px
             img
                 width: 32px
                 height: auto
