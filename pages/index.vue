@@ -7,7 +7,7 @@
             .long-line
         .main-content
             h1 Hi, I'm Valentin!
-            p A Full-stack developer based in Italy
+            p A Full-stack developer based in Prague, Czech Republic.
         .footer
             .long-line
             .socials-container
