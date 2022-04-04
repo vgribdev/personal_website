@@ -30,8 +30,8 @@ const officeWednesday: DefaultTheme = {
 const FullScheduledThursday: DefaultTheme = {
     palette: {
         primary: {
-            main: '#FFF',
-            contrastText: '#a63446'
+            main: 'black',
+            contrastText: '#A3CEF1'
         }
     }
 }
