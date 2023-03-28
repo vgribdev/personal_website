@@ -2,8 +2,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import '../reset.css'
 import { dailyThemes } from '../themes'
 import Head from 'next/head'
-Math.floor(Math.random() * 10)
-
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Fira Sans', sans-serif;

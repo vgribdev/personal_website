@@ -44,7 +44,7 @@ export default function Home() {
                     <Line variant="long" />
                 </Header>
                 <Content>
-                    <h1>Hi, I&apos;m Valentin!</h1>
+                    <h1>Hi, I&apos;m Valentin Grib!</h1>
                     <p>
                         A Full-stack developer based in Prague, Czech Republic.
                     </p>
