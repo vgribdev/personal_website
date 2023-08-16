@@ -21,11 +21,11 @@ const Social: React.FC = () => {
     const theme = useTheme()
     return (
         <SocialContainer>
-            <a href={githubUrl}>
+            <a href={githubUrl} aria-label="Github">
                 <GithubIcon color={theme.palette.primary.contrastText} />
             </a>
 
-            <a href={linkedinUrl}>
+            <a href={linkedinUrl} aria-label="Linkedin">
                 <LinkedinIcon color={theme.palette.primary.contrastText} />
             </a>
         </SocialContainer>
