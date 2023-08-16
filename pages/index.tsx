@@ -9,7 +9,8 @@ import {
     Main,
     Content,
     Footer,
-    AnimatedLogo
+    AnimatedLogo,
+    ShortLine
 } from '../components/HomePage.style'
 import { Logo } from '../components/svg/Logo'
 
@@ -37,20 +38,20 @@ export default function Home() {
         <Main>
             <Page>
                 <Header>
-                    <Line variant="short" />
+                    <ShortLine />
                     <AnimatedLogo>
                         <Logo fill={theme.palette.primary.contrastText}></Logo>
                     </AnimatedLogo>
-                    <Line variant="long" />
+                    <Line />
                 </Header>
                 <Content>
                     <h1>Hi, I&apos;m Valentin Grib!</h1>
                     <p>A Full-stack developer based in Italy</p>
                 </Content>
                 <Footer>
-                    <Line variant="long" />
+                    <Line />
                     <Social />
-                    <Line variant="short" />
+                    <ShortLine />
                 </Footer>
             </Page>
         </Main>

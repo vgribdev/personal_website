@@ -67,12 +67,14 @@ export const Content = styled.div`
     }
 `
 
-export const Line = styled.div<{ variant: 'short' | 'long' }>`
+export const Line = styled.div`
     height: 2px;
     border-radius: 1px;
     background-color: ${({ theme }) => theme.palette.primary.contrastText};
+`
 
-    ${({ variant }) => (variant === 'short' ? 'width: 60px;' : '')}
+export const ShortLine = styled(Line)`
+    width: 60px;
 `
 
 export const Page = styled.div`
