@@ -1,6 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import '../reset.css'
-import { dailyThemes } from '../themes'
+import { classicTuesday } from '../themes'
 import Head from 'next/head'
 const GlobalStyle = createGlobalStyle`
   body {
@@ -9,8 +9,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default function App({ Component, pageProps }) {
-    const day = new Date().getDay()
-    const theme = dailyThemes[day] ?? dailyThemes[0]
+    const theme = classicTuesday
 
     return (
         <>
