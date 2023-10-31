@@ -1,16 +1,3 @@
-/* import {
-    Header,
-    Line,
-    Page,
-    Main,
-    Content,
-    Footer,
-    AnimatedLogo,
-    ShortLine
-} from '../components/HomePage.style' */
-// import { Logo } from '../components/svg/Logo'
-// import { Social } from '../components/Social'
-
 import { Social } from '../components/Social'
 import { Logo } from '../components/svg/Logo'
 
