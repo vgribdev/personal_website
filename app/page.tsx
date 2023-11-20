@@ -1,5 +1,9 @@
+import Link from 'next/link'
 import { Social } from '../components/Social'
 import { Logo } from '../components/svg/Logo'
+import { Omio } from '../components/svg/Omio'
+import { Pipedrive } from '../components/svg/Pipedrive'
+import { Stech } from '../components/svg/Stech'
 
 const Line = () => {
     return <div className="h-[2px] rounded-[1px] bg-black" />
@@ -25,6 +29,27 @@ export default function Home() {
                         A Full-stack developer based in Italy
                     </p>
                 </div>
+                <div className="mt-8 flex flex-col gap-4 md:flex-row">
+                    <Link
+                        href={'https://www.omio.com'}
+                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4"
+                    >
+                        <Omio className="h-6 md:h-8"></Omio>
+                    </Link>
+                    <Link
+                        href={'https://www.pipedrive.com'}
+                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4"
+                    >
+                        <Pipedrive className="h-6 md:h-8"></Pipedrive>
+                    </Link>
+                    <Link
+                        href={'https://www.stech.co.uk/'}
+                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4"
+                    >
+                        <Stech className="h-6 md:h-8"></Stech>
+                    </Link>
+                </div>
+
                 <footer className="absolute bottom-16 grid h-8 w-full grid-cols-footer items-center gap-3">
                     <Line />
                     <Social />
