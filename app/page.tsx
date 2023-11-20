@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <main className="relative flex h-screen flex-col items-center justify-center overflow-hidden px-4 text-lg">
             <div className="relative flex min-h-full w-full flex-col items-center justify-center">
-                <header className="absolute top-16 grid h-8 w-full grid-cols-header items-center gap-3">
+                <header className="absolute top-4 grid h-8 w-full grid-cols-header items-center gap-3 md:top-16">
                     <Line />
                     <div className="flex animate-[0.6s_ease-out_0s_1_slideDown]">
                         <Logo fill="text-black" />
@@ -50,7 +50,7 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <footer className="absolute bottom-16 grid h-8 w-full grid-cols-footer items-center gap-3">
+                <footer className="absolute bottom-4 grid h-8 w-full grid-cols-footer items-center gap-3 md:bottom-16">
                     <Line />
                     <Social />
                     <Line />
