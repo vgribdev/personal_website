@@ -26,7 +26,8 @@ export default function Home() {
                         Hi, I&apos;m Valentin Grib!
                     </h1>
                     <p className="w-ful mt-8 text-xl uppercase">
-                        A Full-stack developer based in Italy
+                        A Full-stack developer<br className="md:hidden"></br>
+                        based in Italy
                     </p>
                 </div>
                 <div className="mt-8 flex flex-col gap-4 md:flex-row">
