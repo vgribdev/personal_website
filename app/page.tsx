@@ -4,6 +4,7 @@ import { Logo } from '../components/svg/Logo'
 import { Omio } from '../components/svg/Omio'
 import { Pipedrive } from '../components/svg/Pipedrive'
 import { Stech } from '../components/svg/Stech'
+import { Elty } from '../components/svg/Elty'
 
 const Line = () => {
     return <div className="h-[2px] rounded-[1px] bg-black" />
@@ -26,11 +27,18 @@ export default function Home() {
                         Hi, I&apos;m Valentin Grib!
                     </h1>
                     <p className="w-ful mt-8 text-xl uppercase">
-                        A Full-stack developer&nbsp;<br className="md:hidden"></br>
+                        A Full-stack developer&nbsp;
+                        <br className="md:hidden"></br>
                         based in Italy
                     </p>
                 </div>
                 <div className="mt-8 flex flex-col gap-4 md:flex-row">
+                    <Link
+                        href={'https://www.elty.it'}
+                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4"
+                    >
+                        <Elty className="h-6 md:h-8"></Elty>
+                    </Link>
                     <Link
                         href={'https://www.omio.com'}
                         className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4"
