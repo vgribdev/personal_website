@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import './global.css'
-import { GeistSans } from 'geist/font'
+import { GeistSans } from 'geist/font/sans'
 
 export const metadata: Metadata = {
     title: 'Valentin Grib Portfolio',
