@@ -10,18 +10,18 @@ export const Social: React.FC = () => {
         <div className="flex items-center justify-center gap-3">
             <a
                 href={githubUrl}
-                className="animate-[0.6s_ease-out_0s_1_slideUp] hover:opacity-60"
+                className="animate-[0.6s_ease-out_0s_1_slideUp] text-black hover:text-teal-400"
                 aria-label="Github"
             >
-                <GithubIcon className={'text-black'} />
+                <GithubIcon />
             </a>
 
             <a
                 href={linkedinUrl}
-                className="animate-[0.6s_ease-out_0s_1_slideUp] hover:opacity-60"
+                className="animate-[0.6s_ease-out_0s_1_slideUp] text-black hover:text-teal-400"
                 aria-label="Linkedin"
             >
-                <LinkedinIcon className={'text-black'} />
+                <LinkedinIcon />
             </a>
         </div>
     )

@@ -1,4 +1,4 @@
-export const GithubIcon: React.FC<{ className: string }> = ({ className }) => {
+export const GithubIcon: React.FC<{ className?: string }> = ({ className }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

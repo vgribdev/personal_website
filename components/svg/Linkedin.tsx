@@ -1,4 +1,4 @@
-export const LinkedinIcon: React.FC<{ className: string }> = ({
+export const LinkedinIcon: React.FC<{ className?: string }> = ({
     className
 }) => (
     <svg
