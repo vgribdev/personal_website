@@ -35,27 +35,27 @@ export default function Home() {
                 <div className="mt-8 flex flex-col gap-4 md:flex-row">
                     <Link
                         href={'https://www.elty.it'}
-                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 will-change-transform hover:scale-105 hover:border-teal-400"
+                        className="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
                     >
-                        <Elty className="h-6 md:h-8"></Elty>
+                        <Elty className="h-6 duration-300 group-hover:scale-110 md:h-8"></Elty>
                     </Link>
                     <Link
                         href={'https://www.omio.com'}
-                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 will-change-transform hover:scale-105 hover:border-teal-400"
+                        className="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
                     >
-                        <Omio className="h-6 md:h-8"></Omio>
+                        <Omio className="h-6 duration-300 group-hover:scale-110 md:h-8"></Omio>
                     </Link>
                     <Link
                         href={'https://www.pipedrive.com'}
-                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 will-change-transform hover:scale-105 hover:border-teal-400"
+                        className="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
                     >
-                        <Pipedrive className="h-6 md:h-8"></Pipedrive>
+                        <Pipedrive className="h-6 duration-300 group-hover:scale-110 md:h-8"></Pipedrive>
                     </Link>
                     <Link
                         href={'https://www.stech.co.uk/'}
-                        className="flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 will-change-transform hover:scale-105 hover:border-teal-400"
+                        className="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
                     >
-                        <Stech className="h-6 md:h-8"></Stech>
+                        <Stech className="h-6 duration-300 group-hover:scale-110 md:h-8"></Stech>
                     </Link>
                 </div>
 
