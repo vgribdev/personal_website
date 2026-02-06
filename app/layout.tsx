@@ -1,6 +1,11 @@
 import { Metadata } from 'next'
 import './global.css'
-import { GeistSans } from 'geist/font/sans'
+import { Mona_Sans } from 'next/font/google'
+
+const monaFont = Mona_Sans({
+    subsets: ['latin'],
+    weight: ['400', '700']
+})
 
 export const metadata: Metadata = {
     title: 'Valentin Grib Portfolio',
@@ -14,7 +19,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={GeistSans.className}>
+        <html lang="en" className={monaFont.className}>
             <body>{children}</body>
         </html>
     )

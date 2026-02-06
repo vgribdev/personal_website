@@ -7,16 +7,16 @@ import { Stech } from '../components/svg/Stech'
 import { Elty } from '../components/svg/Elty'
 
 const Line = () => {
-    return <div className="h-[2px] rounded-[1px] bg-black" />
+    return <div className="h-0.5 rounded-[1px] bg-black" />
 }
 
 export default function Home() {
     return (
         <main className="relative flex h-screen flex-col items-center justify-center overflow-hidden px-4 text-lg">
             <div className="relative flex min-h-full w-full flex-col items-center justify-center">
-                <header className="absolute top-4 grid h-8 w-full grid-cols-header items-center gap-3 md:top-16">
+                <header className="absolute top-4 grid h-8 w-full grid-cols-[64px_auto_1fr] items-center gap-3 md:top-16">
                     <Line />
-                    <div className="flex animate-[0.6s_ease-out_0s_1_slideDown]">
+                    <div className="animate-slideDown flex">
                         <Logo fill="text-black" />
                     </div>
                     <Line />
@@ -59,7 +59,7 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <footer className="absolute bottom-4 grid h-8 w-full grid-cols-footer items-center gap-3 md:bottom-16">
+                <footer className="absolute bottom-4 grid h-8 w-full grid-cols-[1fr_auto_64px] items-center gap-3 md:bottom-16">
                     <Line />
                     <Social />
                     <Line />
