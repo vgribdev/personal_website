@@ -23,16 +23,26 @@ export default function Home() {
                 </header>
 
                 <div className="flex flex-col items-center justify-center text-center">
-                    <h1 className="w-full text-6xl font-bold">
+                    <h1 className="w-full text-4xl font-bold lg:text-6xl">
                         Hi, I&apos;m Valentin Grib!
+                        <br />
                     </h1>
-                    <p className="w-ful mt-8 text-xl uppercase">
-                        A Full-stack developer&nbsp;
-                        <br className="md:hidden"></br>
-                        based in Italy
+                    <p className="w-ful mt-8 text-lg md:text-xl">
+                        Full-stack developer based in Italy.
+                        <br /> Founder of&nbsp;
+                        <a
+                            className="text-purple-700 hover:text-purple-800 hover:underline"
+                            href="https://pixelvisionagency.com"
+                        >
+                            PixelVision
+                        </a>
+                        .
                     </p>
                 </div>
-                <div className="mt-8 flex flex-col gap-4 md:flex-row">
+
+                <hr className="mx-auto my-8 w-full max-w-64 border border-gray-200" />
+                <p className="text-lg italic">Projects i've worked on</p>
+                <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:flex-row">
                     <Link
                         href={'https://www.elty.it'}
                         className="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
