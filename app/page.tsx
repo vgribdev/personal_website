@@ -41,7 +41,7 @@ export default function Home() {
                 </div>
 
                 <hr className="mx-auto my-8 w-full max-w-64 border border-gray-200" />
-                <p className="text-lg italic">Projects i've worked on</p>
+                <p className="text-lg italic">Projects I've worked on</p>
                 <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:flex-row">
                     <Link
                         href={'https://www.elty.it'}
