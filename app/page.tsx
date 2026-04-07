@@ -29,14 +29,6 @@ export default function Home() {
                     </h1>
                     <p className="w-ful mt-8 text-lg md:text-xl">
                         Full-stack developer based in Italy.
-                        <br /> Founder of&nbsp;
-                        <a
-                            className="text-purple-700 hover:text-purple-800 hover:underline"
-                            href="https://pixelvisionagency.com"
-                        >
-                            PixelVision
-                        </a>
-                        .
                     </p>
                 </div>
 
