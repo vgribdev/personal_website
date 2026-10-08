@@ -4,16 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.idea
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# astro
+/dist/
+/.astro/
 
 # misc
 .DS_Store
