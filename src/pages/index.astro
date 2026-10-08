@@ -4,21 +4,10 @@ import '../styles/global.css'
 import Logo from '../assets/logo.svg'
 import Github from '../assets/github.svg'
 import Linkedin from '../assets/linkedin.svg'
-import Elty from '../assets/elty.svg'
-import Omio from '../assets/omio.svg'
-import Pipedrive from '../assets/pipedrive.svg'
-import Stech from '../assets/stech.svg'
 
 const title = 'Valentin Grib'
 const description =
     "Hi I'm Valentin Grib a web developer based in Italy. I like programming, math, socializing and sports."
-
-const projects = [
-    { name: 'Elty', href: 'https://www.elty.it', Icon: Elty },
-    { name: 'Omio', href: 'https://www.omio.com', Icon: Omio },
-    { name: 'Pipedrive', href: 'https://www.pipedrive.com', Icon: Pipedrive },
-    { name: 'Stech', href: 'https://www.stech.co.uk/', Icon: Stech }
-]
 
 const socials = [
     { name: 'Github', href: 'https://github.com/vgribdev', Icon: Github },
@@ -50,23 +39,9 @@ const socials = [
                     <h1 class="w-full text-4xl font-bold lg:text-6xl">
                         Hi, I'm Valentin Grib!
                     </h1>
-                    <p class="mt-8 w-full text-lg md:text-xl">
+                    <p class="mt-8 w-full text-lg md:text-2xl">
                         Full-stack developer based in Italy.
                     </p>
-                </div>
-
-                <hr class="mx-auto my-8 w-full max-w-64 border border-gray-200" />
-                <p class="text-lg italic">Projects I've worked on</p>
-                <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-                    {projects.map(({ name, href, Icon }) => (
-                        <a
-                            href={href}
-                            aria-label={name}
-                            class="group flex items-center justify-center rounded-md border border-solid border-gray-200 p-4 hover:border-teal-400"
-                        >
-                            <Icon class="h-6 w-auto duration-300 group-hover:scale-110 md:h-8" />
-                        </a>
-                    ))}
                 </div>
 
                 <footer class="absolute bottom-4 grid h-8 w-full grid-cols-[1fr_auto_64px] items-center gap-3 md:bottom-16">
